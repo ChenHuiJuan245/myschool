@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/style.css" media="screen" type="text/css" />
+    <script type="text/javascript">
+        function Stu(){
+            var right=document.getElementById("right");
+            right.value='';
+            var request=new XMLHttpRequest();
+            request.onreadystatechange=function () {
+                if (request.readyState==4){
+                    if(request.status==200){
+                        right.value=request.responseText;
+                    }else {
+                        right.value='erroe'+request.statusText;
+                    }
+                }else {
+
+                }
+            }
+            request.open('post','/querystu.do',true);
+            request.send();
+        }
+    </script>
+</head>
+<body>
+<div id="left">
+    <ul>
+        <li class="active"><i class="fa fa-home fa-lg"></i> <a href="view/zuye.jsp" >后台首页</a></li>
+        <li><i class="fa fa-envelope fa-lg"></i> <a href="../queryBuildAdmin.do">楼宇管理员管理</a></li>
+        <li><i class="fa fa-user fa-lg"></i> <a href="#"  onclick="Stu()">学生管理</a></li>
+        <li><i class="fa fa-cogs fa-lg"></i> <a href="queryBuild.do">楼宇管理</a></li>
+        <li><i class="fa fa-power-off fa-lg"></i><a href="querydor.do">宿舍管理</a></li>
+        <li><i class="fa fa-power-off fa-lg"></i><a href="queryin_out.do">学生入住登记</a></li>
+        <li><i class="fa fa-power-off fa-lg"></i><a href="#">学生寝室调换</a></li>
+        <li><i class="fa fa-power-off fa-lg"></i><a href="queryin_out.do">学生迁出登记</a></li>
+        <li><i class="fa fa-power-off fa-lg"></i><a href="queryQueqing.do">学生缺寝记录</a></li>
+        <li><i class="fa fa-power-off fa-lg"></i><a href="#">迁出记录</a></li>
+        <li><i class="fa fa-power-off fa-lg"></i><a href="#">修改密码</a></li>
+        <li><i class="fa fa-power-off fa-lg"></i><a href="exitAdmin.do">退出系统</a></li>
+    </ul>
+</div>
+</body>
+</html>

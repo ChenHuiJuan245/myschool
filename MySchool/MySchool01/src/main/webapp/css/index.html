@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			ul{
+				list-style: none;
+				padding-left:0px;
+			}				
+			#top a{				
+				display: inline-block;
+				width: 60px;
+				height: 35px;
+				line-height: 35px;
+				text-align: center;
+				color: black;
+				border: red 1px solid;
+				font-size: 14px;
+			}
+			#top>li{
+				float: left;
+			}
+			#top{
+				width:630px;
+				height: 160px;
+				padding-left: 70%;	
+										
+			}
+			
+			#top li:hover a{
+				color: royalblue;
+			}
+			#top li ul{
+				display: none;
+			}
+			#top li:hover ul{
+				display: block;
+			}
+			.shezhi a{
+				text-decoration: none;
+			}
+			.shezhi li a:hover{
+				background-color: cornflowerblue;
+				
+			}
+
+
+
+
+			/*#middle{
+				
+				width: 100%;
+				height: 500px;
+				
+			}
+			#dibu{
+				
+				width: 100%;
+				height: 240px;
+				text-align: center;
+			}
+			#dibu a{
+				color: black;
+				padding-left: 20px;
+				font-size: 15px;
+			}*/
+		</style>
+		
+	</head>
+	
+	
+	<body>
+		<div id="box">
+			<ul id="top">
+				<li><a href="#">新闻</a></li>
+				<li><a href="#">hao123</a></li>
+				<li><a href="#">地图</a></li>
+				<li><a href="#">视频</a></li>
+				<li><a href="#">贴吧</a></li>
+				<li><a href="#">学术</a></li>
+				<li><a href="#">登录</a></li>
+				<li><a href="#">设置</a>
+					<ul class="shezhi">
+						<li><a href="#">搜索设置</a></li>
+						<li><a href="#">高级搜索</a></li>
+						<li><a href="#">关闭预测</a></li>
+						<li><a href="#">搜索历史</a></li>
+					</ul>
+				</li>
+				<li><a style="background-color:dodgerblue;color: white;" href="#">更多产品</a></li>
+			</ul>
+		</div>
+		
+		
+		
+		<div id="middle">
+			<img style="padding-left: 40%;padding-top: 20px;" src="img/baidu1.PNG" />
+			<table>
+				<input style="width: 500px;height: 30px;margin-left:32%;background: url(img/soushuo.PNG) no-repeat 460px;" type="text" name="soushuo"/>				
+				<input  style="color: white;background-color:dodgerblue;height: 36px;width: 100px;" type="button" value="百度一下" />				
+			</table>
+		</div>
+		
+		<div id="dibu">
+			<img src="img/erweima.PNG" /><br />
+			<span>百度</span><br /><br />
+			<a href="#">把百度设置为主页</a>
+			<a href="#">关于百度</a>
+			<a href="#">About Baidu</a>
+			<a href="#">百度推广</a><br />
+			&copy;2018 BaiDu<a href="#">使用百度前必读</a>
+			<a href="#">意见反馈</a> 京ICP证030173号        <img src="img/x1.PNG" style="margin-top: 5px;"/>
+			<a href="#">京公网安备11000002000001号</a>  <img src="img/x2.PNG" />
+		</div>
+	</body>
+</html>
